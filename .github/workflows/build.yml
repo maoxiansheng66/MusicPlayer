@@ -25,7 +25,7 @@ jobs:
       run: pyinstaller --onefile --noconsole --name "定时播放系统" main.py
  
     - name: Upload Artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: windows-exe
         path: dist/定时播放系统.exe
