@@ -22,7 +22,7 @@ jobs:
         pip install pyinstaller
  
     - name: Build EXE
-      run: pyinstaller --onefile --noconsole --name "定时播放系统" main.py
+      run: pyinstaller --onefile --noconsole --name "钻石音乐" --icon=app.ico --add-data "app.ico;." main.py
  
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
